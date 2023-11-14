@@ -5,7 +5,10 @@ let output = document.querySelector('#output')
 let reset = document.querySelector('#reset')
 
 convert.addEventListener('click', () => {
-    let results = height.value + weight.value
+
+    
+    let results = eval(height.value * weight.value)
+    
     output.textContent = `The results are ${results}`
 })
 
